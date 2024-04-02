@@ -1,0 +1,104 @@
+﻿/* swagger ui customization */
+.swagger-ui .topbar {
+    background: url(your-new-logo.png) no-repeat;
+    background-color: #1564cb !important;
+    background-position-x: 250px;
+    height: 60px;
+}
+
+    .swagger-ui .topbar .topbar-wrapper img {
+        content: url('images/header/icon-infomil.png');
+    }
+
+    .swagger-ui .topbar .topbar-wrapper a:after {
+        content: "Infomil Api Definition";
+        font-size: 20px;
+        margin-left: 10px;
+        border-bottom: solid 3px #ff6633;
+        height: 28px;
+    }
+
+    .swagger-ui .topbar .download-url-wrapper select {
+        border-color: #ff6633 !important;
+    }
+
+.swagger-ui .info .title {
+    color: #ff6633 !important;
+}
+
+.swagger-ui .scheme-container {
+    border-top: solid 1px #ff6633;
+    border-bottom: solid 1px #ff6633;
+}
+
+.swagger-ui .wrapper section h4.opblock-tag {
+    background-color: #1564cb;
+    border-bottom: solid 4px #1564cb !important;
+    color: #fff;
+}
+
+.swagger-ui .wrapper section svg {
+    fill: #fff !important;
+}
+.swagger-ui .auth-wrapper .auth-container .renderedMarkdown div:first-of-type {
+    font-size: 12px;
+    padding: 0px 0px 5px 0px;
+}
+
+    .swagger-ui .auth-wrapper .auth-container .renderedMarkdown div:first-of-type span:last-of-type {
+        font-size: 14px;
+        font-weight: 500;
+        color: #1564cb;
+    }
+/* swagger ui customization */
+.swagger-ui .topbar {
+    background: url(your-new-logo.png) no-repeat;
+    background-color: #1564cb !important;
+    background-position-x: 250px;
+    height: 60px;
+}
+
+    .swagger-ui .topbar .topbar-wrapper img {
+        content: url('/images/header/icon-infomil.png');
+    }
+
+    .swagger-ui .topbar .topbar-wrapper a:after {
+        content: "Infomil Api Definition";
+        font-size: 20px;
+        margin-left: 10px;
+        border-bottom: solid 3px #ff6633;
+        height: 28px;
+    }
+
+    .swagger-ui .topbar .download-url-wrapper select {
+        border-color: #ff6633 !important;
+    }
+
+.swagger-ui .info .title {
+    color: #ff6633 !important;
+}
+
+.swagger-ui .scheme-container {
+    border-top: solid 1px #ff6633;
+    border-bottom: solid 1px #ff6633;
+}
+
+.swagger-ui .wrapper section h4.opblock-tag {
+    background-color: #1564cb;
+    border-bottom: solid 4px #1564cb !important;
+    color: #fff;
+}
+
+.swagger-ui .wrapper section svg {
+    fill: #fff !important;
+}
+.swagger-ui .auth-wrapper .auth-container .renderedMarkdown div:first-of-type {
+    font-size: 12px;
+    padding: 0px 0px 5px 0px;
+}
+
+.swagger-ui .auth-wrapper .auth-container .renderedMarkdown div:first-of-type span:last-of-type {
+    font-size: 14px;
+    font-weight: 500;
+    color: #1564cb;
+}

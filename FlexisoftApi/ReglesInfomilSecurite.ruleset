@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RuleSet Name="Infomil - Règles de sécurité" Description="Règles de sécurité Infomil. Tout projet doit respecter au minimum ces règles." ToolsVersion="16.0">
+  <Rules AnalyzerId="Microsoft.Analyzers.ManagedCodeAnalysis" RuleNamespace="Microsoft.Rules.Managed">
+    <Rule Id="ZENV00301" Action="Error" />
+    <Rule Id="ZENV00302" Action="Error" />
+    <Rule Id="ZENV00303" Action="Error" />
+    <Rule Id="ZENV00304" Action="Error" />
+  </Rules>
+  <Rules AnalyzerId="SonarAnalyzer.CSharp" RuleNamespace="SonarAnalyzer.CSharp">
+    <Rule Id="S3925" Action="None" />
+  </Rules>
+</RuleSet>

@@ -1,0 +1,63 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<Product>Infomil.Flexisoft.Flexisoft.FlexisoftApi.Api.Contracts</Product>
+		<PackageId>Infomil.Flexisoft.Flexisoft.FlexisoftApi.Api.Contracts</PackageId>
+		<Description>Librairie distribuable de contrats pour l'api Infomil.Flexisoft.Flexisoft.FlexisoftApi.Api</Description>
+		<PackageTags>Infomil</PackageTags>
+		<VersionPrefix>0.0.1</VersionPrefix>
+		<RcVersionSuffix>rc.1</RcVersionSuffix>
+		<AlphaVersionSuffix>alpha.1</AlphaVersionSuffix>
+		<PackageReleaseNotes>
+			0.0.1 Création
+		</PackageReleaseNotes>
+	</PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<Authors>equipe-reference@Framework</Authors>
+		<Company>Infomil</Company>
+		<PackageIcon>icon.png</PackageIcon>
+		<IsPackable>false</IsPackable>
+	</PropertyGroup>
+	<ItemGroup>
+		<None Include="icon.png" Pack="true" PackagePath="" />
+	</ItemGroup>
+	<PropertyGroup>
+		<CodeAnalysisRuleSet>..\ReglesInfomilCommunes.ruleset</CodeAnalysisRuleSet>
+		<EnableNETAnalyzers>true</EnableNETAnalyzers>
+		<RunAnalyzersDuringBuild>true</RunAnalyzersDuringBuild>
+		<EnforceCodeStyleInBuild>false</EnforceCodeStyleInBuild>
+		<AnalysisLevel>latest</AnalysisLevel>
+	</PropertyGroup>
+	<PropertyGroup>
+		<!-- Preview's Version on Local (Folder disk config: Local_Packages)-->
+		<PackageDistribution Condition=" '$(Configuration)' == 'Debug' ">-$(AlphaVersionSuffix)</PackageDistribution>
+
+		<!-- Preview's  Version on nexus (RC)-->
+		<PackageDistribution Condition=" '$(Configuration)' == 'rc' ">-$(RcVersionSuffix)</PackageDistribution>
+
+		<RegistrySource Condition=" '$(Configuration)' == 'Debug' ">Local_Packages</RegistrySource>
+	</PropertyGroup>
+	<PropertyGroup>
+		<Version Condition=" '$(Configuration)' == 'Debug' ">$(VersionPrefix)-$(AlphaVersionSuffix)</Version>
+		<Version Condition=" '$(Configuration)' == 'rc' ">$(VersionPrefix)-$(RcVersionSuffix)</Version>
+		<Version Condition=" '$(Configuration)' == 'release' ">$(VersionPrefix)</Version>
+
+		<PackageVersion Condition=" '$(Configuration)' == 'Debug' ">$(VersionPrefix)-$(AlphaVersionSuffix)</PackageVersion>
+		<PackageVersion Condition=" '$(Configuration)' == 'rc' ">$(VersionPrefix)-$(RcVersionSuffix)</PackageVersion>
+		<PackageVersion Condition=" '$(Configuration)' == 'release' ">$(VersionPrefix)</PackageVersion>
+
+	</PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="6.0.1" />
+		<PackageReference Include="SonarAnalyzer.CSharp" Version="8.52.0.60960">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+	</ItemGroup>
+	<Target Name="PushPackage" AfterTargets="Pack" Label="Push package" Condition=" '$(Configuration)' == 'Debug' ">
+		<MakeDir Directories="$(USERPROFILE)\$(RegistrySource)" ContinueOnError="true"></MakeDir>
+		<Exec Command="dotnet nuget add source &quot;$(USERPROFILE)\Local_Packages&quot; --name &quot;$(RegistrySource)&quot;" ContinueOnError="true"></Exec>
+		<Exec Command="dotnet nuget push &quot;./bin/$(Configuration)/$(PackageId).$(PackageVersion).nupkg&quot; -s &quot;$(RegistrySource)&quot;" ContinueOnError="false" LogStandardErrorAsError="true">
+		</Exec>
+	</Target>
+</Project>

@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RuleSet Name="Infomil - Règles communes" Description="Ruleset contenant les règles communes." ToolsVersion="16.0">
+  <Include Path="reglesinfomilmicrosoft.ruleset" Action="Default" />
+  <Include Path="reglesinfomilsecurite.ruleset" Action="Default" />
+  <Rules AnalyzerId="Microsoft.Analyzers.ManagedCodeAnalysis" RuleNamespace="Microsoft.Rules.Managed">
+    <Rule Id="CA1812" Action="None" />
+    <Rule Id="ZENV00001" Action="Warning" />
+    <Rule Id="ZENV00002" Action="Warning" />
+    <Rule Id="ZENV00003" Action="Warning" />
+    <Rule Id="ZENV00004" Action="Warning" />
+    <Rule Id="ZENV00101" Action="Warning" />
+    <Rule Id="ZENV00102" Action="Warning" />
+    <Rule Id="ZENV00103" Action="Warning" />
+    <Rule Id="ZENV00201" Action="Warning" />
+    <Rule Id="ZENV00202" Action="Warning" />
+    <Rule Id="ZENV00203" Action="Warning" />
+    <Rule Id="ZENV00204" Action="Warning" />
+    <Rule Id="ZENV00205" Action="Warning" />
+    <Rule Id="ZENV00206" Action="Warning" />
+    <Rule Id="ZENV00207" Action="Warning" />
+    <Rule Id="ZENV00208" Action="Warning" />
+    <Rule Id="ZENV00209" Action="Warning" />
+    <Rule Id="ZENV00210" Action="Warning" />
+    <Rule Id="ZENV00211" Action="Warning" />
+    <Rule Id="ZENV00212" Action="Warning" />
+    <Rule Id="ZENV00213" Action="Warning" />
+    <Rule Id="ZENV00214" Action="Warning" />
+    <Rule Id="ZENV00215" Action="Warning" />
+    <Rule Id="ZENV00216" Action="Warning" />
+    <Rule Id="ZENV00401" Action="Warning" />
+    <Rule Id="ZENV00402" Action="Warning" />
+    <Rule Id="ZENV00403" Action="Warning" />
+    <Rule Id="ZENV00404" Action="Warning" />
+    <Rule Id="ZENV00405" Action="Warning" />
+    <Rule Id="ZENV00406" Action="Warning" />
+    <Rule Id="ZENV00501" Action="Warning" />
+    <Rule Id="ZENV00502" Action="Warning" />
+    <Rule Id="ZENV00503" Action="Warning" />
+    <Rule Id="ZENV00504" Action="Warning" />
+    <Rule Id="ZENV00505" Action="Warning" />
+    <Rule Id="ZENV00506" Action="Warning" />
+    <Rule Id="ZENV00507" Action="Warning" />
+    <Rule Id="ZENV00508" Action="Warning" />
+    <Rule Id="ZENV00509" Action="Warning" />
+    <Rule Id="ZENV00510" Action="Warning" />
+    <Rule Id="ZENV00511" Action="Warning" />
+    <Rule Id="ZENV00512" Action="Warning" />
+    <Rule Id="ZENV00513" Action="Warning" />
+    <Rule Id="ZENV00514" Action="Warning" />
+    <Rule Id="ZENV00515" Action="Warning" />
+    <Rule Id="ZENV00516" Action="Warning" />
+    <Rule Id="ZENV00517" Action="Warning" />
+    <Rule Id="ZENV00518" Action="Warning" />
+    <Rule Id="ZENV00519" Action="Warning" />
+    <Rule Id="ZENV00520" Action="Warning" />
+    <Rule Id="ZENV00521" Action="Warning" />
+    <Rule Id="ZENV00522" Action="Warning" />
+    <Rule Id="ZENV00523" Action="Warning" />
+    <Rule Id="ZENV00524" Action="Warning" />
+    <Rule Id="ZENV00525" Action="Warning" />
+    <Rule Id="ZENV00526" Action="Warning" />
+    <Rule Id="ZENV00527" Action="Warning" />
+    <Rule Id="ZENV00601" Action="Warning" />
+    <Rule Id="ZENV00602" Action="Warning" />
+    <Rule Id="ZENV00603" Action="Warning" />
+    <Rule Id="ZENV00604" Action="Warning" />
+    <Rule Id="ZENV00605" Action="Warning" />
+    <Rule Id="ZENV00606" Action="Warning" />
+    <Rule Id="ZENV00607" Action="Warning" />
+    <Rule Id="ZENV00701" Action="Warning" />
+    <Rule Id="ZENV00702" Action="Warning" />
+    <Rule Id="ZENV00703" Action="Warning" />
+    <Rule Id="ZENV00704" Action="Warning" />
+    <Rule Id="ZENV00705" Action="Warning" />
+    <Rule Id="ZENV00706" Action="Warning" />
+    <Rule Id="ZENV00707" Action="Warning" />
+    <Rule Id="ZENV00708" Action="Warning" />
+    <Rule Id="ZENV00709" Action="Warning" />
+    <Rule Id="ZENV00710" Action="Warning" />
+    <Rule Id="ZENV00711" Action="Warning" />
+  </Rules>
+  <Rules AnalyzerId="SonarAnalyzer.CSharp" RuleNamespace="SonarAnalyzer.CSharp">
+    <Rule Id="S3925" Action="None" />
+  </Rules>
+</RuleSet>

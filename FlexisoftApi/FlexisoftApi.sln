@@ -1,0 +1,84 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34525.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infomil.Flexisoft.Flexisoft.FlexisoftApi.Api", "FlexisoftApi\Api\Infomil.Flexisoft.Flexisoft.FlexisoftApi.Api.csproj", "{958C64DF-B5AF-4A9D-BDF3-33EB0B8C6379}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infomil.Flexisoft.Flexisoft.FlexisoftApi.Contracts", "FlexisoftApi\Contracts\Infomil.Flexisoft.Flexisoft.FlexisoftApi.Contracts.csproj", "{8FFE1DFA-F08B-40AF-9CAF-5653E2C37632}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infomil.Flexisoft.Flexisoft.FlexisoftApi.Repositories.Contracts", "FlexisoftApi\Repositories.Contracts\Infomil.Flexisoft.Flexisoft.FlexisoftApi.Repositories.Contracts.csproj", "{AA1DA862-4A14-4CB1-AE42-E8C880B0E051}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infomil.Flexisoft.Flexisoft.FlexisoftApi.Repositories", "FlexisoftApi\Repositories\Infomil.Flexisoft.Flexisoft.FlexisoftApi.Repositories.csproj", "{501CDFB6-FBBA-4015-BDF3-6DB4955C2947}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infomil.Flexisoft.Flexisoft.FlexisoftApi.Repositories.Mock", "FlexisoftApi\Repositories.Mock\Infomil.Flexisoft.Flexisoft.FlexisoftApi.Repositories.Mock.csproj", "{C876B3C1-8F7E-429E-A404-CB11BDD93053}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infomil.Flexisoft.Flexisoft.FlexisoftApi.Services.Contracts", "FlexisoftApi\Services.Contracts\Infomil.Flexisoft.Flexisoft.FlexisoftApi.Services.Contracts.csproj", "{E05C8D8F-C1EC-4774-8F4F-CB5407136B9A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infomil.Flexisoft.Flexisoft.FlexisoftApi.Services", "FlexisoftApi\Services\Infomil.Flexisoft.Flexisoft.FlexisoftApi.Services.csproj", "{6E671C50-9DD7-4E17-B2D6-483989BC70DA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infomil.Flexisoft.Flexisoft.FlexisoftApi.Services.Tests", "FlexisoftApi\Services.Tests\Infomil.Flexisoft.Flexisoft.FlexisoftApi.Services.Tests.csproj", "{ADE3E284-0DFF-4F7C-A047-A33AB05D57AA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infomil.Flexisoft.Flexisoft.FlexisoftApi.Api.Contracts", "FlexisoftApi\Api.Contracts\Infomil.Flexisoft.Flexisoft.FlexisoftApi.Api.Contracts.csproj", "{F61771AB-10B4-4D7F-9C8C-AA1B693E663E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infomil.Flexisoft.Flexisoft.FlexisoftApi.Api.Tests", "FlexisoftApi\Api.Tests\Infomil.Flexisoft.Flexisoft.FlexisoftApi.Api.Tests.csproj", "{10672E1E-03EB-4EC2-AE64-BC290FFE9BC6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{723E04F8-B584-4A68-9FB5-2E6A86CA613E}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{958C64DF-B5AF-4A9D-BDF3-33EB0B8C6379}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{958C64DF-B5AF-4A9D-BDF3-33EB0B8C6379}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{958C64DF-B5AF-4A9D-BDF3-33EB0B8C6379}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{958C64DF-B5AF-4A9D-BDF3-33EB0B8C6379}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FFE1DFA-F08B-40AF-9CAF-5653E2C37632}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FFE1DFA-F08B-40AF-9CAF-5653E2C37632}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FFE1DFA-F08B-40AF-9CAF-5653E2C37632}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FFE1DFA-F08B-40AF-9CAF-5653E2C37632}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA1DA862-4A14-4CB1-AE42-E8C880B0E051}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA1DA862-4A14-4CB1-AE42-E8C880B0E051}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA1DA862-4A14-4CB1-AE42-E8C880B0E051}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA1DA862-4A14-4CB1-AE42-E8C880B0E051}.Release|Any CPU.Build.0 = Release|Any CPU
+		{501CDFB6-FBBA-4015-BDF3-6DB4955C2947}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{501CDFB6-FBBA-4015-BDF3-6DB4955C2947}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{501CDFB6-FBBA-4015-BDF3-6DB4955C2947}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{501CDFB6-FBBA-4015-BDF3-6DB4955C2947}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C876B3C1-8F7E-429E-A404-CB11BDD93053}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C876B3C1-8F7E-429E-A404-CB11BDD93053}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C876B3C1-8F7E-429E-A404-CB11BDD93053}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C876B3C1-8F7E-429E-A404-CB11BDD93053}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E05C8D8F-C1EC-4774-8F4F-CB5407136B9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E05C8D8F-C1EC-4774-8F4F-CB5407136B9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E05C8D8F-C1EC-4774-8F4F-CB5407136B9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E05C8D8F-C1EC-4774-8F4F-CB5407136B9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E671C50-9DD7-4E17-B2D6-483989BC70DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E671C50-9DD7-4E17-B2D6-483989BC70DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E671C50-9DD7-4E17-B2D6-483989BC70DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E671C50-9DD7-4E17-B2D6-483989BC70DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADE3E284-0DFF-4F7C-A047-A33AB05D57AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADE3E284-0DFF-4F7C-A047-A33AB05D57AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADE3E284-0DFF-4F7C-A047-A33AB05D57AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADE3E284-0DFF-4F7C-A047-A33AB05D57AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F61771AB-10B4-4D7F-9C8C-AA1B693E663E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F61771AB-10B4-4D7F-9C8C-AA1B693E663E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F61771AB-10B4-4D7F-9C8C-AA1B693E663E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F61771AB-10B4-4D7F-9C8C-AA1B693E663E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10672E1E-03EB-4EC2-AE64-BC290FFE9BC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10672E1E-03EB-4EC2-AE64-BC290FFE9BC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10672E1E-03EB-4EC2-AE64-BC290FFE9BC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10672E1E-03EB-4EC2-AE64-BC290FFE9BC6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7281F71B-CF02-45D9-8782-1948CDC7DF5F}
+	EndGlobalSection
+EndGlobal

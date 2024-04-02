@@ -1,0 +1,58 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<Authors>Infomil</Authors>
+		<Company>Infomil</Company>
+		<IsPackable>false</IsPackable>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+		<NoWarn>$(NoWarn);1591</NoWarn>
+		<PackageReleaseNotes>
+			0.0.1 Création
+		</PackageReleaseNotes>
+		<Version>0.0.1</Version>
+	</PropertyGroup>
+	<PropertyGroup>
+		<EnableNETAnalyzers>true</EnableNETAnalyzers>
+		<CodeAnalysisRuleSet>..\ReglesInfomilCommunes.ruleset</CodeAnalysisRuleSet>
+		<EnableNETAnalyzers>true</EnableNETAnalyzers>
+		<RunAnalyzersDuringBuild>true</RunAnalyzersDuringBuild>
+		<EnforceCodeStyleInBuild>false</EnforceCodeStyleInBuild>
+		<AnalysisLevel>latest</AnalysisLevel>
+		<UserSecretsId>c71d8fa2-7d11-4737-875c-a9495f0ad131</UserSecretsId>
+	</PropertyGroup>
+	<ItemGroup>
+		<_WebToolingArtifacts Remove="Properties\PublishProfiles\Development.pubxml" />
+		<_WebToolingArtifacts Remove="Properties\PublishProfiles\Production.pubxml" />
+		<_WebToolingArtifacts Remove="Properties\PublishProfiles\Development.pubxml" />
+		<_WebToolingArtifacts Remove="Properties\PublishProfiles\Test.pubxml" />
+	</ItemGroup>
+	<ItemGroup>
+	  <None Include="..\..\.editorconfig" Link=".editorconfig" />
+	</ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="FluentValidation" Version="11.9.0" />
+		<PackageReference Include="MicroElements.Swashbuckle.FluentValidation" Version="6.0.0" />
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+		<PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="6.5.0" />
+		<PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.5.0" />
+		<PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="5.0.0" />
+		<PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer" Version="5.0.0" />
+		<PackageReference Include="SonarAnalyzer.CSharp" Version="8.52.0.60960">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+	</ItemGroup>
+	<ItemGroup Condition=" '$(TargetFramework)' == 'net5.0' ">
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="5.0.2" />
+	</ItemGroup>
+	<ItemGroup Condition=" '$(TargetFramework)' == 'net6.0' ">
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="6.0.1" />
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\Contracts\Infomil.Flexisoft.Flexisoft.FlexisoftApi.Contracts.csproj" />
+		<ProjectReference Include="..\Services\Infomil.Flexisoft.Flexisoft.FlexisoftApi.Services.csproj" />
+		<ProjectReference Include="..\Repositories\Infomil.Flexisoft.Flexisoft.FlexisoftApi.Repositories.csproj" />
+		<ProjectReference Include="..\Repositories.Mock\Infomil.Flexisoft.Flexisoft.FlexisoftApi.Repositories.Mock.csproj" />
+		<ProjectReference Include="..\Api.Contracts\Infomil.Flexisoft.Flexisoft.FlexisoftApi.Api.Contracts.csproj" />
+	</ItemGroup>
+</Project>
